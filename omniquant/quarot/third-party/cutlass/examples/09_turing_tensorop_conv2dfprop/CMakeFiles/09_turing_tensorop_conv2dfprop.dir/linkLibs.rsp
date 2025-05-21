@@ -1,0 +1,1 @@
+ -Wl,-rpath,'$ORIGIN' -Wl,-rpath,'$ORIGIN/../lib64' -Wl,-rpath,'$ORIGIN/../lib' -Wl,-rpath,'/usr/local/cuda-12.4/lib64' -Wl,-rpath,'/usr/local/cuda-12.4/lib' -lcuda -lcudadevrt -lcudart_static -lrt -lpthread -ldl 

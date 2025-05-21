@@ -1,0 +1,3 @@
+# ninja log v5
+0	20718	1747369281695278632	/home/jhahn/00.Project/02.Quarot/quarot/third-party/fast-hadamard-transform/build/temp.linux-x86_64-cpython-310/csrc/fast_hadamard_transform.o	c8ebb5ad2fc4681f
+1	71061	1747369332008004222	/home/jhahn/00.Project/02.Quarot/quarot/third-party/fast-hadamard-transform/build/temp.linux-x86_64-cpython-310/csrc/fast_hadamard_transform_cuda.o	11ceacdc9f91dbac
