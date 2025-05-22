@@ -129,7 +129,7 @@ def evaluate(lm, args, logger):
                 shift_logits = logits[:, :-1, :]
                 shift_labels = testenc[:, (i * lm.seqlen) : ((i + 1) * lm.seqlen)][
                     :, 1:
-                ].to(lm.model.lm_head.weight.device)
+                ].to(lm.model.lm_head.module.weight.device)
                 loss_fct = nn.CrossEntropyLoss()
                 loss = loss_fct(
                     shift_logits.view(-1, shift_logits.size(-1)),

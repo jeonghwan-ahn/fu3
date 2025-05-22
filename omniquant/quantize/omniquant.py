@@ -222,7 +222,7 @@ def omniquant(
                     if isinstance(module.module, QuantLinear):
                         for key in pairs.keys():
                             if key in name:
-                                print("YEADDDDDD")
+                                #print("YEADDDDDD")
                                 act = act_scales[f"{layer_name_prefix}.{i}.{name}.module"].to(device=dev, dtype=dtype).clamp(min=1e-5)
                                 weight = module.module.weight.abs().max(dim=0)[0].clamp(min=1e-5)
                                 scale = (act.pow(args.alpha)/weight.pow(1-args.alpha)).clamp(min=1e-5)
